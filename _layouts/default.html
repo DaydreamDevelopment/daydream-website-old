@@ -1,0 +1,19 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+{% include head.html %}
+<body>
+    {% include loader.html %}
+	<div class="wrapper">
+		<div id="header-wrapper">
+        {% include header.html %}
+		</div>
+		<div id="main">
+      {{ content }}
+    </div>
+	</div> 
+  {% include js.html %}
+</body>
+</html>
