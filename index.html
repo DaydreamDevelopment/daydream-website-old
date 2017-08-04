@@ -7,7 +7,7 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                 <div class="content">
                     <div class="caption">
                     	<img src="/assets/images/white-logo.svg" alt="">
-                        <h2> Colorfully Creative </h2>
+                        <h2> We Develop Digital Solutions </h2>
                     	<a href="#page2" title="" class="dt-sc-button small type3"> Learn More </a>
                     </div>
                 </div>
@@ -18,36 +18,36 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                         <h2 class="border-title aligncenter">What We Do </h2>
                         <div class="dt-sc-one-third column no-space first">
                             <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Design Magics </a> </h5>
+                                <h5> <a href=""> Web Development </a> </h5>
                                 <i class="fa fa-magic special"> <span></span> </i>
                                 <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium sint occaecat cupidatat non proident. </p>
                             </div>
                             <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Photoshop & Html </a> </h5>
+                                <h5> <a href=""> App Development </a> </h5>
                                 <i class="fa fa-instagram special"> <span></span> </i>
                                 <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium sint occaecat cupidatat non proident. </p>
                             </div>
                         </div>
                         <div class="dt-sc-one-third column no-space">
                             <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Technical Thinking </a> </h5>
+                                <h5> <a href=""> UI/UX Design </a> </h5>
                                 <i class="fa fa-tablet special"> <span></span> </i>
                                 <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium sint occaecat cupidatat non proident. </p>
                             </div>
                             <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Web Development </a> </h5>
+                                <h5> <a href=""> Branding </a> </h5>
                                 <i class="fa fa-android special"> <span></span> </i>
                                 <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium sint occaecat cupidatat non proident. </p>
                             </div>
                         </div>
                         <div class="dt-sc-one-third column no-space">
                             <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Quality Results </a> </h5>
+                                <h5> <a href=""> API Development </a> </h5>
                                 <i class="fa fa-flask special"> <span></span> </i>
                                 <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium sint occaecat cupidatat non proident. </p>
                             </div>
                             <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> 24/7 Support </a> </h5>
+                                <h5> <a href=""> Project Management </a> </h5>
                                 <i class="fa fa-ticket special"> <span></span> </i>
                                 <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accus antium sint occaecat cupidatat non proident. </p>
                             </div>
@@ -65,120 +65,31 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                                 <a href="" class="carousel-next"><i class="fa fa-angle-right"></i></a>
                             </div>
                             <div class="dt-sc-portfolio-container no-space">
-                                <div class="dt-sc-one-third column first">
-                                    <div class="dt-sc-portfolio indoor games">
-                                        <figure>
-                                            <img src="http://placehold.it/330x380&text=Portfolio+Image" alt="" title="">
-                                            <div class="fig-overlay">
-                                                <div class="external-icons">	
-                                                    <a  href="http://placehold.it/330x380&text=Portfolio+Image" data-gal="prettyPhoto[gallery]" title="Enjoy Life with Family"> <span class="fa fa-expand"> </span> </a>		
-                                                    <a href="#"> <span class="fa fa-link"> </span> </a>	
+                                {% for portfolio in site.portfolios %}
+                                {% capture thecycle %}{% cycle 'one', 'two', 'three' %}{% endcapture %}
+                                {% if forloop.first or thecycle == 'three' %}
+                                    <div class="dt-sc-one-third column first">
+                                {% else %}
+                                    <div class="dt-sc-one-third column">
+                                {% endif %}
+                                        <div class="dt-sc-portfolio indoor games">
+                                            <figure>
+                                                <img src="http://placehold.it/330x380&text=Portfolio+Image" alt="" title="">
+                                                <div class="fig-overlay">
+                                                    <div class="external-icons">		
+                                                        <a href="{{ portfolio.link }}"> <span class="fa fa-link"> </span> </a>	
+                                                    </div>
+                                                    <p> {{ portfolio.description }} </p>
                                                 </div>
-                                                <p> Ullum scripserit ut mea, eum ut recteque sententiae sadipscing, volumus ex vix.</p>
-                                            </div>
-                                            <figcaption>
-                                                <h5><a href="portfolio-single.html"> Enjoy Life with Family </a></h5>
-                                                <p class="tags"> <a href="#"> Tourism </a> , <a href="#"> Family </a> , <a href="#"> Picnic </a> </p>	
-                                                <i class="fa fa-camera"></i>
-                                            </figcaption>
-                                       </figure>
-                                    </div>
-                                </div>  
-                                <div class="dt-sc-one-third column">
-                                    <div class="dt-sc-portfolio indoor games">
-                                        <figure>
-                                            <img src="http://placehold.it/330x380&text=Portfolio+Image" alt="" title="">
-                                            <div class="fig-overlay">
-                                                <div class="external-icons">	
-                                                    <a  href="http://placehold.it/330x380&text=Portfolio+Image" data-gal="prettyPhoto[gallery]" title="Thrill Travel in Winch"> <span class="fa fa-expand"> </span> </a>		
-                                                    <a href="#"> <span class="fa fa-link"> </span> </a>	
-                                                </div>
-                                                <p> Ullum scripserit ut mea, eum ut recteque sententiae sadipscing, volumus ex vix.</p>
-                                            </div>
-                                            <figcaption>
-                                                <h5><a href="portfolio-single.html"> Meditate with Music </a></h5>
-                                                <p class="tags"> <a href="#"> Meditation </a> , <a href="#"> Music </a> </p>	
-                                                <i class="fa fa-music"></i>
-                                            </figcaption>
-                                       </figure>
-                                    </div>
-                                </div> 
-                                <div class="dt-sc-one-third column">
-                                    <div class="dt-sc-portfolio indoor games">
-                                        <figure>
-                                            <img src="http://placehold.it/330x380&text=Portfolio+Image" alt="" title="">
-                                            <div class="fig-overlay">
-                                                <div class="external-icons">	
-                                                    <a  href="http://placehold.it/330x380&text=Portfolio+Image" data-gal="prettyPhoto[gallery]" title="Ready for a Long Drive"> <span class="fa fa-expand"> </span> </a>		
-                                                    <a href="#"> <span class="fa fa-link"> </span> </a>	
-                                                </div>
-                                                <p> Ullum scripserit ut mea, eum ut recteque sententiae sadipscing, volumus ex vix.</p>
-                                            </div>
-                                            <figcaption>
-                                                <h5><a href="portfolio-single.html"> Capturing the Life </a></h5>
-                                                <p class="tags"> <a href="#"> Captutre </a> , <a href="#"> Photography </a> , <a href="#"> Life </a> </p>	
-                                                <i class="fa fa-camera-retro"></i>
-                                            </figcaption>
-                                       </figure>
-                                    </div>
-                                </div>
-                                <div class="dt-sc-one-third column first">
-                                    <div class="dt-sc-portfolio indoor games">
-                                        <figure>
-                                            <img src="http://placehold.it/330x380&text=Portfolio+Image" alt="" title="">
-                                            <div class="fig-overlay">
-                                                <div class="external-icons">	
-                                                    <a  href="http://placehold.it/330x380&text=Portfolio+Image" data-gal="prettyPhoto[gallery]" title="Enjoy Life with Family"> <span class="fa fa-expand"> </span> </a>		
-                                                    <a href="#"> <span class="fa fa-link"> </span> </a>	
-                                                </div>
-                                                <p> Ullum scripserit ut mea, eum ut recteque sententiae sadipscing, volumus ex vix.</p>
-                                            </div>
-                                            <figcaption>
-                                                <h5><a href="portfolio-single.html"> Never Walk Back </a></h5>
-                                                <p class="tags"> <a href="#"> Philosophy </a> , <a href="#"> Walk </a> </p>	
-                                                <i class="fa fa-camera"></i>
-                                            </figcaption>
-                                       </figure>
-                                    </div>
-                                </div>  
-                                <div class="dt-sc-one-third column">
-                                    <div class="dt-sc-portfolio indoor games">
-                                        <figure>
-                                            <img src="http://placehold.it/330x380&text=Portfolio+Image" alt="" title="">
-                                            <div class="fig-overlay">
-                                                <div class="external-icons">	
-                                                    <a  href="http://placehold.it/330x380&text=Portfolio+Image" data-gal="prettyPhoto[gallery]" title="Thrill Travel in Winch"> <span class="fa fa-expand"> </span> </a>		
-                                                    <a href="#"> <span class="fa fa-link"> </span> </a>	
-                                                </div>
-                                                <p> Ullum scripserit ut mea, eum ut recteque sententiae sadipscing, volumus ex vix.</p>
-                                            </div>
-                                            <figcaption>
-                                                <h5><a href="portfolio-single.html"> Ready for a Long Drive </a></h5>
-                                                <p class="tags"> <a href="#"> Tourism </a> , <a href="#"> Family </a> , <a href="#"> Picnic </a> </p>	
-                                                <i class="fa fa-video-camera"></i>
-                                            </figcaption>
-                                       </figure>
-                                    </div>
-                                </div> 
-                                <div class="dt-sc-one-third column">
-                                    <div class="dt-sc-portfolio indoor games">
-                                        <figure>
-                                            <img src="http://placehold.it/330x380&text=Portfolio+Image" alt="" title="">
-                                            <div class="fig-overlay">
-                                                <div class="external-icons">	
-                                                    <a  href="http://placehold.it/330x380&text=Portfolio+Image" data-gal="prettyPhoto[gallery]" title="Ready for a Long Drive"> <span class="fa fa-expand"> </span> </a>		
-                                                    <a href="#"> <span class="fa fa-link"> </span> </a>	
-                                                </div>
-                                                <p> Ullum scripserit ut mea, eum ut recteque sententiae sadipscing, volumus ex vix.</p>
-                                            </div>
-                                            <figcaption>
-                                                <h5><a href="portfolio-single.html"> Retro Lover </a></h5>
-                                                <p class="tags"> <a href="#"> Retro </a> , <a href="#"> Vehicle </a> , <a href="#"> Picnic </a> </p>	
-                                                <i class="fa fa-camera-retro"></i>
-                                            </figcaption>
-                                       </figure>
-                                    </div>
-                                </div> 
+                                                <figcaption>
+                                                    <h5><a href="{{ portfolio.link }}"> {{ portfolio.title }} </a></h5>
+                                                    <p class="tags"> {% for tag in portfolio.tags %} {% if forloop.last %} {{ tag }} {% else %} {{ tag }}, {% endif %} {% endfor %}</p>	
+                                                    <i class="{{ portfolio.icon }}"></i>
+                                                </figcaption>
+                                        </figure>
+                                        </div>
+                                    </div>  
+                                {% endfor %}
                             </div>
 						</div>
                     </div>
@@ -191,10 +102,10 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                         <div class="dt-sc-one-fifth column first">
                             <div class="dt-sc-team">
                                 <figure>
-                                    <img src="http://placehold.it/480x450&text=Team+Image" alt=""/>
+                                    <img src="/assets/images/brayden.png" alt=""/>
                                     <figcaption>
                                         <div class="short-info">
-                                            <h6> Kate <span> Berry </span></h6>
+                                            <h6> Brayden <span> Girard </span></h6>
                                             <p class="icon-links">
                                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
                                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
@@ -210,10 +121,28 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                         <div class="dt-sc-one-fifth column">
                             <div class="dt-sc-team">
                                 <figure>
-                                    <img src="http://placehold.it/480x450&text=Team+Image" alt=""/>
+                                    <img src="/assets/images/troy.png" alt=""/>
                                     <figcaption>
                                         <div class="short-info">
-                                            <h6> Karthik <span> Jeeva </span></h6>
+                                            <h6> Troy <span> Veenstra </span></h6>
+                                            <p class="icon-links">
+                                                <a href="#"> <i class="fa fa-twitter"></i> </a>
+                                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                                <a href="#"> <i class="fa fa-google"></i> </a>
+                                            </p>
+                                        </div>
+                                        <p class="description">Lorem ipsum dolor adipiscing. Vivamus pellentesque molestie commodo.</p>
+                                    </figcaption>			
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="dt-sc-one-fifth column">
+                            <div class="dt-sc-team">
+                                <figure>
+                                    <img src="/assets/images/felipe.png" alt=""/>
+                                    <figcaption>
+                                        <div class="short-info">
+                                            <h6> Felipe <span> Simoes </span></h6>
                                             <p class="icon-links">
                                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
                                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
@@ -231,7 +160,7 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                                     <img src="http://placehold.it/480x450&text=Team+Image" alt=""/>
                                     <figcaption>
                                         <div class="short-info">
-                                            <h6> Angel <span> Henna </span></h6>
+                                            <h6> Hugo <span> North </span></h6>
                                             <p class="icon-links">
                                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
                                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
@@ -249,25 +178,7 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                                     <img src="http://placehold.it/480x450&text=Team+Image" alt=""/>
                                     <figcaption>
                                         <div class="short-info">
-                                            <h6> Angel <span> Henna </span></h6>
-                                            <p class="icon-links">
-                                                <a href="#"> <i class="fa fa-twitter"></i> </a>
-                                                <a href="#"> <i class="fa fa-facebook"></i> </a>
-                                                <a href="#"> <i class="fa fa-google"></i> </a>
-                                            </p>
-                                        </div>
-                                        <p class="description">Lorem ipsum dolor adipiscing. Vivamus pellentesque molestie commodo.</p>
-                                    </figcaption>			
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="dt-sc-one-fifth column">
-                            <div class="dt-sc-team">
-                                <figure>
-                                    <img src="http://placehold.it/480x450&text=Team+Image" alt=""/>
-                                    <figcaption>
-                                        <div class="short-info">
-                                            <h6> Angel <span> Henna </span></h6>
+                                            <h6> Raphael <span> Vicarone </span></h6>
                                             <p class="icon-links">
                                                 <a href="#"> <i class="fa fa-twitter"></i> </a>
                                                 <a href="#"> <i class="fa fa-facebook"></i> </a>
@@ -288,120 +199,27 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                         <h2 class="border-title aligncenter"> Our Blog </h2>
                         <div class="dt-sc-blog-carousel-wrapper">
                             <ul class="dt-sc-blog-carousel">
-                                <li class="dt-sc-blog-entry">	
-                                    <div class="dt-sc-entry-meta">				
-                                        <div class="date"><p> May <span> 16 </span> </p> </div>
-                                        <a href="#" class="likes"><span class="fa fa-heartbeat"> </span> 2</a>	
-                                        <a href="#" class="post-type"><span class="fa fa-file-audio-o"> </span> </a>	
-                                        <a href="#" class="comments"><span class="fa fa-comments-o"> 5 </span> </a>			
-                                    </div>
-                                    <div class="dt-sc-entry-thumb">
-                                        <a href="#"> <img src="http://placehold.it/375x252&text=Blog+Image" alt="blog"> </a>
-                                        <p class="author"> Posted by : <a href="#"> Ram </a> </p> 
-                                    </div>
-                                    <div class="dt-sc-entry-details">
-                                        <div class="dt-sc-entry-title"><h5><a href="blog-single.html"> Enjoy Life with Family  </a></h5></div>			
-                                        <div class="dt-sc-entry-thumb-desc">
-                                            <p> Vero dissentias id nec, volutpat aliquando per ad. Duo wisi impedit ne. Natum iusto eu mea, no eos eruditi erokie appetere placerat. </p>
-                                            <a href="#" class="dt-sc-read-more"> Read More </a>
-                                        </div>	
-                                    </div>
-                                </li>
-                                <li class="dt-sc-blog-entry">	
-                                    <div class="dt-sc-entry-meta">				
-                                        <div class="date"><p> May <span> 16 </span> </p> </div>
-                                        <a href="#" class="likes"><span class="fa fa-heartbeat"> </span> 1</a>	
-                                        <a href="#" class="post-type"><span class="fa fa-file-video-o"> </span> </a>	
-                                        <a href="#" class="comments"><span class="fa fa-comments-o">2 </span> </a>			
-                                    </div>
-                                    <div class="dt-sc-entry-thumb">
-                                        <a href="#"> <img src="http://placehold.it/375x252&text=Blog+Image" alt="blog"> </a>
-                                        <p class="author"> Posted by : <a href="#"> Ram </a> </p>
-                                    </div>
-                                    <div class="dt-sc-entry-details">
-                                        <div class="dt-sc-entry-title"><h5><a href="blog-single-with-left-sidebar.html"> Meditate with Music  </a></h5></div>			
-                                        <div class="dt-sc-entry-thumb-desc">
-                                            <p> Vero dissentias id nec, volutpat aliquando per ad. Duo wisi impedit ne. Natum iusto eu mea, no eos eruditi erokie appetere placerat. </p>
-                                            <a href="#" class="dt-sc-read-more"> Read More </a>
-                                        </div>	
-                                    </div>
-                                </li>
-                                <li class="dt-sc-blog-entry">	
-                                    <div class="dt-sc-entry-meta">				
-                                        <div class="date"><p> May <span> 16 </span> </p> </div>
-                                        <a href="#" class="likes"><span class="fa fa-heartbeat"> </span> 6</a>	
-                                        <a href="#" class="post-type"><span class="fa fa-file-text"> </span> </a>	
-                                        <a href="#" class="comments"><span class="fa fa-comments-o"> 9</span> </a>
-                                    </div>
-                                    <div class="dt-sc-entry-thumb">
-                                        <a href="#"> <img src="http://placehold.it/375x252&text=Blog+Image" alt="blog"> </a>
-                                        <p class="author"> Posted by : <a href="#"> Ram </a> </p>
-                                    </div>
-                                    <div class="dt-sc-entry-details">
-                                        <div class="dt-sc-entry-title"><h5><a href="blog-single-with-right-sidebar.html"> Capturing the Life  </a></h5></div>			
-                                        <div class="dt-sc-entry-thumb-desc">
-                                            <p> Vero dissentias id nec, volutpat aliquando per ad. Duo wisi impedit ne. Natum iusto eu mea, no eos eruditi erokie appetere placerat. </p>
-                                            <a href="#" class="dt-sc-read-more"> Read More </a>
-                                        </div>	
-                                    </div>
-                                </li>
-                                <li class="dt-sc-blog-entry">	
-                                    <div class="dt-sc-entry-meta">				
-                                        <div class="date"><p> May <span> 16 </span> </p> </div>
-                                        <a href="#" class="likes"><span class="fa fa-heartbeat"> </span> 4</a>	
-                                        <a href="#" class="post-type"><span class="fa fa-file-image-o"> </span> </a>	
-                                        <a href="#" class="comments"><span class="fa fa-comments-o"> 6</span> </a>			
-                                    </div>
-                                    <div class="dt-sc-entry-thumb">
-                                        <a href="#"> <img src="http://placehold.it/375x252&text=Blog+Image" alt="blog"> </a>
-                                        <p class="author"> Posted by : <a href="blog-single.html"> Ram </a> </p>
-                                    </div>
-                                    <div class="dt-sc-entry-details">
-                                        <div class="dt-sc-entry-title"><h5><a href="#"> Aim Higher </a></h5></div>			
-                                        <div class="dt-sc-entry-thumb-desc">
-                                            <p> Vero dissentias id nec, volutpat aliquando per ad. Duo wisi impedit ne. Natum iusto eu mea, no eos eruditi erokie appetere placerat. </p>
-                                            <a href="#" class="dt-sc-read-more"> Read More </a>
-                                        </div>	
-                                    </div>
-                                </li>
-                                <li class="dt-sc-blog-entry">	
-                                    <div class="dt-sc-entry-meta">				
-                                        <div class="date"><p> May <span> 16 </span> </p> </div>
-                                        <a href="#" class="likes"><span class="fa fa-heartbeat"> </span> 6</a>	
-                                        <a href="#" class="post-type"><span class="fa fa-file-text"> </span> </a>	
-                                        <a href="#" class="comments"><span class="fa fa-comments-o"> 9</span> </a>
-                                    </div>
-                                    <div class="dt-sc-entry-thumb">
-                                        <a href="#"> <img src="http://placehold.it/375x252&text=Blog+Image" alt="blog"> </a>
-                                        <p class="author"> Posted by : <a href="#"> Ram </a> </p>
-                                    </div>
-                                    <div class="dt-sc-entry-details">
-                                        <div class="dt-sc-entry-title"><h5><a href="blog-single-with-left-sidebar.html"> Vivamus Ullamcorper </a></h5></div>			
-                                        <div class="dt-sc-entry-thumb-desc">
-                                            <p> Vero dissentias id nec, volutpat aliquando per ad. Duo wisi impedit ne. Natum iusto eu mea, no eos eruditi erokie appetere placerat. </p>
-                                            <a href="#" class="dt-sc-read-more"> Read More </a>
-                                        </div>	
-                                    </div>
-                                </li>
-                                <li class="dt-sc-blog-entry">	
-                                    <div class="dt-sc-entry-meta">				
-                                        <div class="date"><p> May <span> 16 </span> </p> </div>
-                                        <a href="#" class="likes"><span class="fa fa-heartbeat"> </span> 4</a>	
-                                        <a href="#" class="post-type"><span class="fa fa-file-image-o"> </span> </a>	
-                                        <a href="#" class="comments"><span class="fa fa-comments-o"> 6</span> </a>			
-                                    </div>
-                                    <div class="dt-sc-entry-thumb">
-                                        <a href="#"> <img src="http://placehold.it/375x252&text=Blog+Image" alt="blog"> </a>
-                                        <p class="author"> Posted by : <a href="#"> Ram </a> </p>
-                                    </div>
-                                    <div class="dt-sc-entry-details">
-                                        <div class="dt-sc-entry-title"><h5><a href="blog-single-with-right-sidebar.html"> Oportere Expetenda </a></h5></div>			
-                                        <div class="dt-sc-entry-thumb-desc">
-                                            <p> Vero dissentias id nec, volutpat aliquando per ad. Duo wisi impedit ne. Natum iusto eu mea, no eos eruditi erokie appetere placerat. </p>
-                                            <a href="#" class="dt-sc-read-more"> Read More </a>
-                                        </div>	
-                                    </div>
-                                </li>
+                                {% for post in site.posts %}
+                                    <li class="dt-sc-blog-entry">	
+                                        <div class="dt-sc-entry-meta">		
+                                            <div class="date"><p> {{ post.date | date: "%B" }} <span>{{ post.date | date: "%-d" }}</span> </p> </div>
+                                            <a href="#" class="likes"><span class="fa fa-heartbeat"> </span> 2</a>	
+                                            <a href="#" class="post-type"><span class="fa fa-file-audio-o"> </span> </a>	
+                                            <a href="#" class="comments"><span class="fa fa-comments-o"> 5 </span> </a>			
+                                        </div>
+                                        <div class="dt-sc-entry-thumb">
+                                            <a href="#"> <img src="http://placehold.it/375x252&text=Blog+Image" alt="blog"> </a>
+                                            <p class="author"> Posted by : <a href="#"> Ram </a> </p> 
+                                        </div>
+                                        <div class="dt-sc-entry-details">
+                                            <div class="dt-sc-entry-title"><h5><a href="{{ post.url }}"> {{ post.title }}  </a></h5></div>			
+                                            <div class="dt-sc-entry-thumb-desc">
+                                                {{ post.excerpt }} 
+                                                <a href="{{ post.url }}" class="dt-sc-read-more"> Read More </a>
+                                            </div>	
+                                        </div>
+                                    </li>
+                                {% endfor %}
                             </ul>
                             <div id="pager" class="blog-pagination">
                                 <a href="#"> 1</a>

@@ -2,8 +2,6 @@ name: Daydream
 author: Daydream Development Inc.
 url: https://www.daydreamdev.com
 collections:
-  services:
-  members:
   portfolios:
 exclude:
   - Gemfile

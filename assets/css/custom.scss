@@ -3,11 +3,52 @@
 @import "bourbon/bourbon";
 @import "base/base";
 
-.nav-contact p {
-  background: #FFFFFF;
-  color: $dark-gray;
+// Preloader
+.loader-text:nth-child(5n + 1) { 
+  stroke: $blue; 
+  -webkit-animation-delay: -1.2s; 
+  animation-delay: -1.2s; 
+}
+.loader-text:nth-child(5n + 2) { 
+  stroke: $light-gray; 
+  -webkit-animation-delay: -2.4s; 
+  animation-delay: -2.4s; 
+}
+.loader-text:nth-child(5n + 3) { 
+  stroke: $dark-gray; 
+  -webkit-animation-delay: -3.6s; 
+  animation-delay: -3.6s; 
+}
+.loader-text:nth-child(5n + 4) { 
+  stroke: $white; 
+  -webkit-animation-delay: -4.8s; 
+  animation-delay: -4.8s; 
+}
+.loader-text:nth-child(5n + 5) { 
+  stroke: shade($blue, 20%); 
+  -webkit-animation-delay: -6s; 
+  animation-delay: -6s; 
 }
 
+#loader-wrapper {
+  background: $black;
+}
+
+// Body
+.section {
+    background-image: url(/assets/images/bg.jpg);
+}
+  
+// Home section
+.caption {
+  background: rgba($blue, 0.95);
+
+  img {
+    width:35%;
+  }
+}
+
+// Portfolio Section
 .dt-sc-portfolio .fig-overlay {
   background: rgba($blue, 0.7);
 }
@@ -22,46 +63,15 @@
 
 .dt-sc-portfolio:hover figcaption a { color: rgba($blue,1); }
 
-.caption {
-  background: rgba($blue, 0.95);
-
-  img {
-    width:35%;
-  }
-}
-
-.red {
-  .pp-tableCell {
-    background-color: $light-gray;
-  }
-}
-
-.green {
-  .pp-tableCell {
-    background-color: $light-gray;
-  }
-}
-
-.blue {
-  .pp-tableCell {
-    background-color: $light-gray;
-  }
-}
-
-.maroon {
-  .pp-tableCell {
-    background-color: $dark-gray;
-  }
-}
-
-.orange {
-  .pp-tableCell {
-    background-color: $dark-gray;
-  }
-}
-
+// Contact Section
 .view-map {
   background: $blue;
+}
+
+// Navigation
+.nav-contact p {
+  background: #FFFFFF;
+  color: $dark-gray;
 }
 
 #header.type1 ul li.violet {
@@ -146,4 +156,66 @@
 
 #header ul li.active.red, #header ul li.red:hover {
   background: $blue;
+}
+
+// Background overlay colors
+.red {
+  .pp-tableCell {
+    background-color: rgba($light-gray, 0.95);
+  }
+}
+
+.green {
+  .pp-tableCell {
+    background-color: rgba($light-gray, 0.95);
+  }
+}
+
+.blue {
+  .pp-tableCell {
+    background-color: rgba($light-gray, 0.95);
+  }
+}
+
+.maroon {
+  .pp-tableCell {
+    background-color: rgba($dark-gray, 0.95);
+  }
+}
+
+.orange {
+  .pp-tableCell {
+    background-color: rgba($dark-gray, 0.95);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section.red {
+    .content {
+      background-color: rgba($light-gray, 0.95);
+    }
+  }
+  .section.green {
+    .content {
+      background-color: rgba($light-gray, 0.95);
+    }
+  }
+
+  .section.blue {
+    .content {
+      background-color: rgba($light-gray, 0.95);
+    }
+  }
+
+  .section.maroon {
+    .content {
+      background-color: rgba($dark-gray, 0.95);
+    }
+  }
+
+  .section.orange {
+    .content {
+      background-color: rgba($dark-gray, 0.95);
+    }
+  }
 }

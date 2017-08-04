@@ -1,6 +1,38 @@
-.nav-contact p {
-  background: #FFFFFF;
-  color: #373737; }
+.loader-text:nth-child(5n + 1) {
+  stroke: #00A8FF;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s; }
+
+.loader-text:nth-child(5n + 2) {
+  stroke: #838280;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s; }
+
+.loader-text:nth-child(5n + 3) {
+  stroke: #373737;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s; }
+
+.loader-text:nth-child(5n + 4) {
+  stroke: #FFF;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s; }
+
+.loader-text:nth-child(5n + 5) {
+  stroke: #0086cc;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s; }
+
+#loader-wrapper {
+  background: #000; }
+
+.section {
+  background-image: url(/assets/images/bg.jpg); }
+
+.caption {
+  background: rgba(0, 168, 255, 0.95); }
+  .caption img {
+    width: 35%; }
 
 .dt-sc-portfolio .fig-overlay {
   background: rgba(0, 168, 255, 0.7); }
@@ -14,28 +46,12 @@
 .dt-sc-portfolio:hover figcaption a {
   color: #00a8ff; }
 
-.caption {
-  background: rgba(0, 168, 255, 0.95); }
-  .caption img {
-    width: 35%; }
-
-.red .pp-tableCell {
-  background-color: #838280; }
-
-.green .pp-tableCell {
-  background-color: #838280; }
-
-.blue .pp-tableCell {
-  background-color: #838280; }
-
-.maroon .pp-tableCell {
-  background-color: #373737; }
-
-.orange .pp-tableCell {
-  background-color: #373737; }
-
 .view-map {
   background: #00A8FF; }
+
+.nav-contact p {
+  background: #FFFFFF;
+  color: #373737; }
 
 #header.type1 ul li.violet {
   -webkit-box-shadow: inset 5px 0 0 0 #0097e6;
@@ -102,3 +118,34 @@
 
 #header ul li.active.red, #header ul li.red:hover {
   background: #00A8FF; }
+
+.red .pp-tableCell {
+  background-color: rgba(131, 130, 128, 0.95); }
+
+.green .pp-tableCell {
+  background-color: rgba(131, 130, 128, 0.95); }
+
+.blue .pp-tableCell {
+  background-color: rgba(131, 130, 128, 0.95); }
+
+.maroon .pp-tableCell {
+  background-color: rgba(55, 55, 55, 0.95); }
+
+.orange .pp-tableCell {
+  background-color: rgba(55, 55, 55, 0.95); }
+
+@media only screen and (max-width: 767px) {
+  .section.red .content {
+    background-color: rgba(131, 130, 128, 0.95); }
+
+  .section.green .content {
+    background-color: rgba(131, 130, 128, 0.95); }
+
+  .section.blue .content {
+    background-color: rgba(131, 130, 128, 0.95); }
+
+  .section.maroon .content {
+    background-color: rgba(55, 55, 55, 0.95); }
+
+  .section.orange .content {
+    background-color: rgba(55, 55, 55, 0.95); } }
