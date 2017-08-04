@@ -1,0 +1,149 @@
+---
+---
+@import "bourbon/bourbon";
+@import "base/base";
+
+.nav-contact p {
+  background: #FFFFFF;
+  color: $dark-gray;
+}
+
+.dt-sc-portfolio .fig-overlay {
+  background: rgba($blue, 0.7);
+}
+
+.dt-sc-portfolio .fig-overlay a span:hover { 
+  color: rgba($blue, 0.7);
+}
+
+.dt-sc-portfolio:hover figcaption i {  
+  background: rgba($blue, 0.7); 
+}
+
+.dt-sc-portfolio:hover figcaption a { color: rgba($blue,1); }
+
+.caption {
+  background: rgba($blue, 0.95);
+
+  img {
+    width:35%;
+  }
+}
+
+.red {
+  .pp-tableCell {
+    background-color: $light-gray;
+  }
+}
+
+.green {
+  .pp-tableCell {
+    background-color: $light-gray;
+  }
+}
+
+.blue {
+  .pp-tableCell {
+    background-color: $light-gray;
+  }
+}
+
+.maroon {
+  .pp-tableCell {
+    background-color: $dark-gray;
+  }
+}
+
+.orange {
+  .pp-tableCell {
+    background-color: $dark-gray;
+  }
+}
+
+.view-map {
+  background: $blue;
+}
+
+#header.type1 ul li.violet {
+    -webkit-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    -moz-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+}
+
+#header.type1 ul li.violet span, #header.type2 ul li.violet span {
+  background: shade($blue, 10%);
+}
+
+#header ul li.active.violet, #header ul li.violet:hover {
+  background: $blue;
+}
+
+#header.type1 ul li.green {
+    -webkit-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    -moz-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+}
+
+#header.type1 ul li.green span, #header.type2 ul li.green span {
+  background: shade($blue, 10%);
+}
+
+#header ul li.active.green, #header ul li.green:hover {
+  background: $blue;
+}
+
+#header.type1 ul li.orange {
+    -webkit-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    -moz-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+}
+
+#header.type1 ul li.orange span, #header.type2 ul li.orange span {
+  background: shade($blue, 10%);
+}
+
+#header ul li.active.orange, #header ul li.orange:hover {
+  background: $blue;
+}
+
+#header.type1 ul li.maroon {
+    -webkit-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    -moz-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+}
+
+#header.type1 ul li.maroon span, #header.type2 ul li.maroon span {
+  background: shade($blue, 10%);
+}
+
+#header ul li.active.maroon, #header ul li.maroon:hover {
+  background: $blue;
+}
+
+#header.type1 ul li.blue {
+    -webkit-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    -moz-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+}
+
+#header.type1 ul li.blue span, #header.type2 ul li.blue span {
+  background: shade($blue, 10%);
+}
+
+#header ul li.active.blue, #header ul li.blue:hover {
+  background: $blue;
+}
+
+#header.type1 ul li.red {
+    -webkit-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    -moz-box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+    box-shadow: inset 5px 0 0 0 shade($blue, 10%);
+}
+
+#header.type1 ul li.red span, #header.type2 ul li.red span {
+  background: shade($blue, 10%);
+}
+
+#header ul li.active.red, #header ul li.red:hover {
+  background: $blue;
+}
