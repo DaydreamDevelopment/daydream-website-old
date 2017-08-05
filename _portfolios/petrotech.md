@@ -1,6 +1,8 @@
 ---
 title: Petrotech Environmental
-image: /assets/images/petrotech-cover.png
+image-preview: /assets/images/petrotech.jpg
+image-1: /assets/images/petrotech-cover.jpg
+image-2: /assets/images/petrotech-cover2.jpg
 tags:
   - Web
   - Jekyll

@@ -1,6 +1,8 @@
 ---
 title: Cornwall Innovation Centre
-image: /assets/images/cic-cover.png
+image-preview: /assets/images/cic.jpg
+image-1: /assets/images/cic-cover.jpg
+image-2: /assets/images/cic-cover2.jpg
 tags:
   - Web
   - Jekyll

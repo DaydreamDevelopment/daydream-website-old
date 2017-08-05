@@ -1,6 +1,8 @@
 ---
 title: Adam Beehler Plumbing
-image: /assets/images/abp-cover.png
+image-preview: /assets/images/abp.jpg
+image-1: /assets/images/abp-cover.jpg
+image-2: /assets/images/abp-cover2.jpg
 tags:
   - Web
   - Jekyll

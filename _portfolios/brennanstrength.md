@@ -1,6 +1,8 @@
 ---
 title: Brennan Strength App
-image: /assets/images/brennanstrength-cover.png
+image-preview: /assets/images/brennanstrength.jpg
+image-1: /assets/images/brennanstrength-cover.jpg
+image-2: /assets/images/brennanstrength-cover2.jpg
 tags: 
   - Mobile
   - Web

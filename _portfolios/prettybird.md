@@ -1,6 +1,8 @@
 ---
 title: Prettybird App
-image: /assets/images/prettybird-cover.png
+image-preview: /assets/images/prettybird.jpg
+image-1: /assets/images/prettybird-cover.jpg
+image-2: /assets/images/prettybird-cover2.jpg
 tags:
   - Mobile
   - Web

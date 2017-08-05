@@ -1,6 +1,8 @@
 ---
 title: Air North Promo
-image: /assets/images/airnorth-cover.png
+image-preview: /assets/images/airnorth.jpg
+image-1: /assets/images/airnorth-cover.jpg
+image-2: /assets/images/airnorth-cover2.jpg
 tags:
   - Web
   - Jekyll

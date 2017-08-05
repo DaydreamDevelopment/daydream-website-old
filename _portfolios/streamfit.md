@@ -1,6 +1,8 @@
 ---
 title: StreamFit.tv
-image: /assets/images/streamfit-cover.png
+image-preview: /assets/images/streamfit.jpg
+image-1: /assets/images/streamfit-cover.jpg
+image-2: /assets/images/streamfit-cover2.jpg
 tags:
   - Mobile
   - Web

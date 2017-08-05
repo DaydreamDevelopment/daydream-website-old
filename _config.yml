@@ -3,6 +3,8 @@ author: Daydream Development Inc.
 url: https://www.daydreamdev.com
 collections:
   portfolios:
+    output: true
+    permalink: /portfolio/:name
 exclude:
   - Gemfile
   - Gemfile.lock
