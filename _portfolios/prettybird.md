@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Prettybird App
 image-preview: /assets/images/prettybird.jpg
 image-1: /assets/images/prettybird-cover.jpg

@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Lightenco Website
 image-preview: /assets/images/lightenco.jpg
 image-1: /assets/images/lightenco-cover.jpg

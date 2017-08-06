@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Air North Promo
 image-preview: /assets/images/airnorth.jpg
 image-1: /assets/images/airnorth-cover.jpg

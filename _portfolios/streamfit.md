@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: StreamFit.tv
 image-preview: /assets/images/streamfit.jpg
 image-1: /assets/images/streamfit-cover.jpg

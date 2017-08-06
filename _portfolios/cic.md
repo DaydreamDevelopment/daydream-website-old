@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Cornwall Innovation Centre
 image-preview: /assets/images/cic.jpg
 image-1: /assets/images/cic-cover.jpg

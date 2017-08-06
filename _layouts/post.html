@@ -1,70 +1,37 @@
 --- 
+layout: inner-page
 title: Daydream | Blog
 description: Daydream's blog includes articles from Cornwall website developer's, Cornwall designers, and Cornwall software developers.
 ---
-<!doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js inner-page"> <!--<![endif]-->
-{% include head.html %}
-<body>
-    {% include loader.html %}
-	<div class="wrapper inner-page">
-		<div id="header-wrapper">
-        {% include internal-header.html %}
-		</div>
-		<div id="main">
-<div class="orange">
-    <div class="content">
-        <div class="page-title">
-            <div class="page-title-overlay"> </div>
-            <h1> {{ page.title }} </h1>
-        </div>
-        <div class="container">
-            <section id="primary" class="content-full-width">
-                <article class="dt-sc-blog-entry dt-sc-format-gallery dt-sc-blog-single-entry">
-                    <div class="dt-sc-blog-entry-inner">
-                        <div class="dt-sc-entry-thumb">
-                            <a href="#"><img src="{{ page.image }}" alt="" title=""></a>
-                        </div>
-                        <div class="dt-sc-entry-details">
-                            <div class="dt-sc-entry-title">
-                                <h4><a href="#"> {{ page.title }} </a></h4>
-                            </div>
-                            <div class="dt-sc-entry-metadata">
-                                <p class="date"> <i class="fa fa-calendar"></i> {{ page.date }} </p>
-                                <p class="author"> <i class="fa fa-user"></i> By : <a href="#" title="{{ page.author }}"> {{ page.author }} </a> </p>
-                                <p><a href="{{ site.url }}{{ page.url }}#disqus_thread"><i class="fa fa-comments"></i>0</a></p>
-                            </div>
-                            {{ content }}
-                        </div>
-                    </div>
-                </article>
-                <div class="dt-sc-author-info">
-                    <h3>About the Author</h3>
-                    <img src="{{ page.author-image }}" alt="">
-                    <div class="dt-sc-author-desc">
-                        <div class="dt-sc-author-title">
-                            <h5><a href="#">{{ page.author }}</a></h5><span>{{ page.author-title }}</span>
-                        </div>
-                        <p>{{ page.author-bio }}</p>
-                    </div>
-                </div>
-                {% include disqus.html %}
-            </section>
-        </div>
-        <footer>
-            <div class="copyright">
-                <div class="container">
-                    <p>Copyright © {{ site.time | date: '%y' }}. All Rights Reserved by <a href="#">Daydream Development Inc.</a></p>
-                </div>
+
+<section id="primary" class="content-full-width">
+    <article class="dt-sc-blog-entry dt-sc-format-gallery dt-sc-blog-single-entry">
+        <div class="dt-sc-blog-entry-inner">
+            <div class="dt-sc-entry-thumb">
+                <a href="#"><img src="{{ page.image }}" alt="" title=""></a>
             </div>
-        </footer>
+            <div class="dt-sc-entry-details">
+                <div class="dt-sc-entry-title">
+                    <h4><a href="#"> {{ page.title }} </a></h4>
+                </div>
+                <div class="dt-sc-entry-metadata">
+                    <p class="date"> <i class="fa fa-calendar"></i> {{ page.date }} </p>
+                    <p class="author"> <i class="fa fa-user"></i> By : <a href="#" title="{{ page.author }}"> {{ page.author }} </a> </p>
+                    <p><a href="{{ site.url }}{{ page.url }}#disqus_thread"><i class="fa fa-comments"></i>0</a></p>
+                </div>
+                {{ content }}
+            </div>
+        </div>
+    </article>
+    <div class="dt-sc-author-info">
+        <h3>About the Author</h3>
+        <img src="{{ page.author-image }}" alt="">
+        <div class="dt-sc-author-desc">
+            <div class="dt-sc-author-title">
+                <h5><a href="#">{{ page.author }}</a></h5><span>{{ page.author-title }}</span>
+            </div>
+            <p>{{ page.author-bio }}</p>
+        </div>
     </div>
-</div>
-    </div>
-	</div> 
-  {% include js.html %}
-</body>
-</html>
+    {% include disqus.html %}
+</section>

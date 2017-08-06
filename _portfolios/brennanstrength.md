@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Brennan Strength App
 image-preview: /assets/images/brennanstrength.jpg
 image-1: /assets/images/brennanstrength-cover.jpg

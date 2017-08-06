@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Adam Beehler Plumbing
 image-preview: /assets/images/abp.jpg
 image-1: /assets/images/abp-cover.jpg

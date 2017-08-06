@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Petrotech Environmental
 image-preview: /assets/images/petrotech.jpg
 image-1: /assets/images/petrotech-cover.jpg
