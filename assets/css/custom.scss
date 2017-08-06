@@ -61,7 +61,26 @@
   background: rgba($blue, 0.7); 
 }
 
-.dt-sc-portfolio:hover figcaption a { color: rgba($blue,1); }
+.dt-sc-portfolio:hover figcaption a { 
+  color: rgba($blue,1); 
+}
+
+.dt-sc-team figure p.icon-links a i.fa-github {
+    box-shadow: inset 0 0 0 15px #000;
+}
+
+// Blog Section
+html.inner-page, html.inner-page body {
+    background-image: url(/assets/images/blog.jpg);
+}
+
+.page-title .page-title-overlay {
+    background: url(/assets/images/blog-header.jpg) no-repeat center center;
+}
+
+.inner-page .orange .content {
+    background-color: rgba($dark-gray,0.95);
+}
 
 // Contact Section
 .view-map {
