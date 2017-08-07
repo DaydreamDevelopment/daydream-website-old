@@ -1,9 +1,12 @@
 ---
 layout: portfolio
 title: StreamFit.tv
+client: StreamFit
+year: 2016
 image-preview: /assets/images/streamfit.jpg
-image-1: /assets/images/streamfit-cover.jpg
-image-2: /assets/images/streamfit-cover2.jpg
+images: 
+  - /assets/images/streamfit-cover.jpg
+  - /assets/images/streamfit-cover2.jpg
 tags:
   - Mobile
   - Web
@@ -13,3 +16,4 @@ icon: fa fa-video-camera
 description: Broadcast live classes, promote your personal trainers and build your brand instantly through the power of StreamFit. 
 link: /portfolio/streamfit.html
 ---
+Broadcast live classes, promote your personal trainers and build your brand instantly through the power of StreamFit. 
