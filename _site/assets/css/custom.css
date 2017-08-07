@@ -49,6 +49,12 @@
 .dt-sc-team figure p.icon-links a i.fa-github {
   box-shadow: inset 0 0 0 15px #000; }
 
+.dt-sc-team figure p.icon-links a i.fa-instagram {
+  box-shadow: inset 0 0 0 15px #8a3ab9; }
+
+.dt-sc-team figure p.icon-links a i.fa-linkedin {
+  box-shadow: inset 0 0 0 15px #0077B5; }
+
 .recent-portfolio {
   margin-top: 70px; }
 

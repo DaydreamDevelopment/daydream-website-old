@@ -48,7 +48,7 @@ description: Daydream's portfolio includes Jekyll website development, Angular a
                                     <p> {{ portfolio.description }}</p>
                                 </div>
                                 <figcaption>
-                                    <h5><a href="portfolio-single.html"> {{ portfolio.title }} </a></h5>
+                                    <h5><a href="{{ portfolio.link }}"> {{ portfolio.title }} </a></h5>
                                     <p class="tags"> {% for tag in portfolio.tags %} {% if forloop.last %} {{ tag }} {% else %} {{ tag }}, {% endif %} {% endfor %} </p>	
                                     <i class="{{ portfolio.icon }}"></i>
                                 </figcaption>
