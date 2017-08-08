@@ -197,11 +197,15 @@ jQuery(document).ready(function($){
 	//Google Map...
 	var $map = $('#dt-sc-popup-map');
 	$map.gMap({
-		markers: [{ 
-				  address : 'No: 58 A, East Madison St, Baltimore, MD, USA',
-				  html: 'No: 58 A, East Madison St, Baltimore, MD, USA'
-				}],
-		zoom: 16,
+		markers: [
+				{
+					latitude: 45.0287528,
+					longitude:-74.6818283
+				}
+		],
+		latitude: 45.0391249,
+		longitude: -74.7110107,
+		zoom: 15,
 		scrollwheel: false,
 		controls: false
 	});
