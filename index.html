@@ -3,262 +3,262 @@ layout: default
 title: 'Daydream | We develop digital solutions'
 description: 'Creating digital solutions using Jekyll website development, Angular application development and Node server development.'
 ---
-	    	<div class="section home violet" id="page1">
-                <div class="content">
-                    <div class="caption">
-                    	<img src="/assets/images/white-logo.svg" alt="">
-                        <h2> We Develop Digital Solutions </h2>
-                    	<a href="#page2" title="" class="dt-sc-button small type3"> Learn More </a>
-                    </div>
+<div class="section home violet" id="page1">
+    <div class="content">
+        <div class="caption">
+            <img src="/assets/images/white-logo.svg" alt="">
+            <h2> We Develop Digital Solutions </h2>
+            <a href="#page2" title="" class="dt-sc-button small type3"> Learn More </a>
+        </div>
+    </div>
+</div>
+<div class="section services green" id="page2">
+    <div class="content">
+        <div class="container">
+            <h2 class="border-title aligncenter">What We Do </h2>
+            <div class="dt-sc-one-third column no-space first">
+                <div class="dt-sc-ico-content type1">
+                    <h5> <a href=""> Web Development </a> </h5>
+                    <i class="fa fa-desktop special"> <span></span> </i>
+                    <p> When developing for the modern web we primarily use a JAM Stack to ensure speed, reliability and security for our clients. We typically will build websites in Jekyll and applications in Angular. </p>
+                </div>
+                <div class="dt-sc-ico-content type1">
+                    <h5> <a href=""> App Development </a> </h5>
+                    <i class="fa fa-tablet special"> <span></span> </i>
+                    <p> Future apps will be moving to the web, so we build native iOS and Android applications using the latest hybrid and progressive web app technologies.</p>
                 </div>
             </div>
-            <div class="section services green" id="page2">
-                <div class="content">
-                    <div class="container">
-                        <h2 class="border-title aligncenter">What We Do </h2>
-                        <div class="dt-sc-one-third column no-space first">
-                            <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Web Development </a> </h5>
-                                <i class="fa fa-desktop special"> <span></span> </i>
-                                <p> When developing for the modern web we primarily use a JAM Stack to ensure speed, reliability and security for our clients. We typically will build websites in Jekyll and applications in Angular. </p>
-                            </div>
-                            <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> App Development </a> </h5>
-                                <i class="fa fa-tablet special"> <span></span> </i>
-                                <p> Future apps will be moving to the web, so we build native iOS and Android applications using the latest hybrid and progressive web app technologies.</p>
-                            </div>
-                        </div>
-                        <div class="dt-sc-one-third column no-space">
-                            <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> UI/UX Design </a> </h5>
-                                <i class="fa fa-paint-brush special"> <span></span> </i>
-                                <p> No matter how many features your product has, you will have trouble keeping customers without a good design. We design UI/UX following todays standards using styles such as Material Design. </p>
-                            </div>
-                            <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Branding </a> </h5>
-                                <i class="fa fa-apple special"> <span></span> </i>
-                                <p> Does your company need a makeover or are you just getting started? We design custom logos, business cards, signage and many other marketing materials. </p>
-                            </div>
-                        </div>
-                        <div class="dt-sc-one-third column no-space">
-                            <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> API Development </a> </h5>
-                                <i class="fa fa-cloud special"> <span></span> </i>
-                                <p> With the nature of todays software and hardware, keeping infrastructures distributed is important. We build restful API's using node based frameworks for flexiblility and reliability. </p>
-                            </div>
-                            <div class="dt-sc-ico-content type1">
-                                <h5> <a href=""> Project Management </a> </h5>
-                                <i class="fa fa-sitemap special"> <span></span> </i>
-                                <p> We take on the entire projects from start to finish. This includes everything from helping you plan your project to finding the proper marketing support to launch. </p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="dt-sc-one-third column no-space">
+                <div class="dt-sc-ico-content type1">
+                    <h5> <a href=""> UI/UX Design </a> </h5>
+                    <i class="fa fa-paint-brush special"> <span></span> </i>
+                    <p> No matter how many features your product has, you will have trouble keeping customers without a good design. We design UI/UX following todays standards using styles such as Material Design. </p>
+                </div>
+                <div class="dt-sc-ico-content type1">
+                    <h5> <a href=""> Branding </a> </h5>
+                    <i class="fa fa-apple special"> <span></span> </i>
+                    <p> Does your company need a makeover or are you just getting started? We design custom logos, business cards, signage and many other marketing materials. </p>
                 </div>
             </div>
-            <div class="section portfolio maroon" id="page3">
-                <div class="content">
-                    <div class="container">
-                        <h2 class="border-title aligncenter">Our Portfolio </h2>
-                        <div class="dt-sc-portfolio-carousel-wrapper">
-                        	<div class="carousel-arrows">
-                                <a href="" class="carousel-prev"><i class="fa fa-angle-left"></i></a>
-                                <a href="" class="carousel-next"><i class="fa fa-angle-right"></i></a>
-                            </div>
-                            <div class="dt-sc-portfolio-container no-space">
-                                {% for portfolio in site.portfolios %}
-                                {% capture thecycle %}{% cycle 'one', 'two', 'three' %}{% endcapture %}
-                                {% if forloop.first or thecycle == 'three' %}
-                                    <div class="dt-sc-one-third column first">
-                                {% else %}
-                                    <div class="dt-sc-one-third column">
-                                {% endif %}
-                                        <div class="dt-sc-portfolio indoor games">
-                                            <figure>
-                                                <img src="{{ portfolio.image-preview }}" alt="" title="">
-                                                <div class="fig-overlay">
-                                                    <div class="external-icons">		
-                                                        <a href="{{ portfolio.link }}"> <span class="fa fa-link"> </span> </a>	
-                                                    </div>
-                                                    <p> {{ portfolio.description }} </p>
-                                                </div>
-                                                <figcaption>
-                                                    <h5><a href="{{ portfolio.link }}"> {{ portfolio.title }} </a></h5>
-                                                    <p class="tags"> {% for tag in portfolio.tags %} {% if forloop.last %} {{ tag }} {% else %} {{ tag }}, {% endif %} {% endfor %}</p>	
-                                                    <i class="{{ portfolio.icon }}"></i>
-                                                </figcaption>
-                                        </figure>
-                                        </div>
-                                    </div>  
-                                {% endfor %}
-                            </div>
-						</div>
-                    </div>
+            <div class="dt-sc-one-third column no-space">
+                <div class="dt-sc-ico-content type1">
+                    <h5> <a href=""> API Development </a> </h5>
+                    <i class="fa fa-cloud special"> <span></span> </i>
+                    <p> With the nature of todays software and hardware, keeping infrastructures distributed is important. We build restful API's using node based frameworks for flexiblility and reliability. </p>
+                </div>
+                <div class="dt-sc-ico-content type1">
+                    <h5> <a href=""> Project Management </a> </h5>
+                    <i class="fa fa-sitemap special"> <span></span> </i>
+                    <p> We take on the entire projects from start to finish. This includes everything from helping you plan your project to finding the proper marketing support to launch. </p>
                 </div>
             </div>
-			<div class="section about red" id="page4">
-                <div class="content">
-                	<h2 class="border-title aligncenter"> Our Team </h2>
-					<div class="container">
-                        <div class="dt-sc-one-fifth column first">
-                            <div class="dt-sc-team">
+        </div>
+    </div>
+</div>
+<div class="section portfolio maroon" id="page3">
+    <div class="content">
+        <div class="container">
+            <h2 class="border-title aligncenter">Our Portfolio </h2>
+            <div class="dt-sc-portfolio-carousel-wrapper">
+                <div class="carousel-arrows">
+                    <a href="" class="carousel-prev"><i class="fa fa-angle-left"></i></a>
+                    <a href="" class="carousel-next"><i class="fa fa-angle-right"></i></a>
+                </div>
+                <div class="dt-sc-portfolio-container no-space">
+                    {% for portfolio in site.portfolios %}
+                    {% capture thecycle %}{% cycle 'one', 'two', 'three' %}{% endcapture %}
+                    {% if forloop.first or thecycle == 'three' %}
+                        <div class="dt-sc-one-third column first">
+                    {% else %}
+                        <div class="dt-sc-one-third column">
+                    {% endif %}
+                            <div class="dt-sc-portfolio indoor games">
                                 <figure>
-                                    <img src="/assets/images/brayden.png" alt=""/>
+                                    <img src="{{ portfolio.image-preview }}" alt="" title="">
+                                    <div class="fig-overlay">
+                                        <div class="external-icons">		
+                                            <a href="{{ portfolio.link }}"> <span class="fa fa-link"> </span> </a>	
+                                        </div>
+                                        <p> {{ portfolio.description }} </p>
+                                    </div>
                                     <figcaption>
-                                        <div class="short-info">
-                                            <h6> Brayden <span> Girard </span></h6>
-                                            <p class="icon-links">
-                                                <a href="https://www.facebook.com/brayden.girard" target="_blank"> <i class="fa fa-facebook"></i> </a>
-                                                <a href="https://www.linkedin.com/in/braydengirard" target="_blank"> <i class="fa fa-linkedin"></i> </a>
-                                                <a href="https://github.com/braydengirard" target="_blank"> <i class="fa fa-github"></i> </a>
-                                            </p>
-                                        </div>
-                                        <p class="description">Founder & CEO</p>
-                                    </figcaption>			
-                                </figure>
+                                        <h5><a href="{{ portfolio.link }}"> {{ portfolio.title }} </a></h5>
+                                        <p class="tags"> {% for tag in portfolio.tags %} {% if forloop.last %} {{ tag }} {% else %} {{ tag }}, {% endif %} {% endfor %}</p>	
+                                        <i class="{{ portfolio.icon }}"></i>
+                                    </figcaption>
+                            </figure>
                             </div>
-                        </div>
-                        <div class="dt-sc-one-fifth column">
-                            <div class="dt-sc-team">
-                                <figure>
-                                    <img src="/assets/images/troy.png" alt=""/>
-                                    <figcaption>
-                                        <div class="short-info">
-                                            <h6>Troy <span> Veenstra </span></h6>
-                                            <p class="icon-links">
-                                                <a href="https://www.facebook.com/troy.veenstra" target="_blank"> <i class="fa fa-facebook"></i> </a>
-                                                <a href="https://www.linkedin.com/in/troy-veenstra-368b15139" target="_blank"> <i class="fa fa-linkedin"></i> </a>
-                                                <a href="#" target="_blank"> <i class="fa fa-dribbble"></i> </a>
-                                            </p>
-                                        </div>
-                                        <p class="description">Art Director</p>
-                                    </figcaption>			
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="dt-sc-one-fifth column">
-                            <div class="dt-sc-team">
-                                <figure>
-                                    <img src="/assets/images/felipe.png" alt=""/>
-                                    <figcaption>
-                                        <div class="short-info">
-                                            <h6> Felipe <span> Simoes </span></h6>
-                                            <p class="icon-links">
-                                                <a href="https://www.facebook.com/fs.simoes" target="_blank"> <i class="fa fa-facebook"></i> </a>
-                                                <a href="https://www.linkedin.com/in/felipesimoes" target="_blank"> <i class="fa fa-linkedin"></i> </a>
-                                                <a href="https://github.com/felipedd" target="_blank"> <i class="fa fa-github"></i> </a>
-                                            </p>
-                                        </div>
-                                        <p class="description">CTO</p>
-                                    </figcaption>			
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="dt-sc-one-fifth column">
-                            <div class="dt-sc-team">
-                                <figure>
-                                    <img src="/assets/images/member.png" alt=""/>
-                                    <figcaption>
-                                        <div class="short-info">
-                                            <h6> Hugo <span> North </span></h6>
-                                            <p class="icon-links">
-                                                <a href="https://www.facebook.com/hugo.north" target="_blank"> <i class="fa fa-facebook"></i> </a>
-                                                <a href="https://www.linkedin.com/in/hugo-north-a4371a71" target="_blank"> <i class="fa fa-linkedin"></i> </a>
-                                                <a href="https://github.com/hugokkk" target="_blank"> <i class="fa fa-github"></i> </a>
-                                            </p>
-                                        </div>
-                                        <p class="description">Developer</p>
-                                    </figcaption>			
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="dt-sc-one-fifth column">
-                            <div class="dt-sc-team">
-                                <figure>
-                                    <img src="/assets/images/member.png" alt=""/>
-                                    <figcaption>
-                                        <div class="short-info">
-                                            <h6> Raphael <span> Vicarone </span></h6>
-                                            <p class="icon-links">
-                                                <a href="https://www.facebook.com/Crossfalcon" target="_blank"> <i class="fa fa-facebook"></i> </a>
-                                                <a href="https://www.linkedin.com/in/raphael-vicarone-9028a3107" target="_blank"> <i class="fa fa-linkedin"></i> </a>
-                                                <a href="https://github.com/rvicarone" target="_blank"> <i class="fa fa-github"></i> </a>
-                                            </p>
-                                        </div>
-                                        <p class="description">Developer</p>
-                                    </figcaption>			
-                                </figure>
-                            </div>
-                        </div>
-					</div>
-				</div>
-			</div>
-            <div class="section blog orange" id="page5">
-                <div class="content">
-                    <div class="container">
-                        <h2 class="border-title aligncenter"> Our Blog </h2>
-                        <div class="dt-sc-blog-carousel-wrapper">
-                            <ul class="dt-sc-blog-carousel">
-                                {% for post in site.posts %}
-                                    <li class="dt-sc-blog-entry">	
-                                        <div class="dt-sc-entry-meta">	
-                                            <div class="date"><p> <span>{{ post.date | date: "%b %-d" }}</span> </p> </div>	
-                                            <a href="{{ site.url }}{{ post.url }}#disqus_thread" class="comments"><span class="fa fa-comments-o"> 0 </span> </a>			
-                                        </div>
-                                        <div class="dt-sc-entry-thumb">
-                                            <a href="{{ post.url }}"> <img src="{{ post.image-preview }}" alt="blog"> </a>
-                                            <p class="author"> Posted by : <a href="#"> {{ post.author }} </a> </p> 
-                                        </div>
-                                        <div class="dt-sc-entry-details">
-                                            <div class="dt-sc-entry-title"><h5><a href="{{ post.url }}"> {{ post.title }}  </a></h5></div>			
-                                            <div class="dt-sc-entry-thumb-desc">
-                                                {{ post.excerpt | truncatewords: 30 }} 
-                                                <a href="{{ post.url }}" class="dt-sc-read-more"> Read More </a>
-                                            </div>	
-                                        </div>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                            <div id="pager" class="blog-pagination">
-                                <a href="#"> 1</a>
-                                <a href="#" class="selected">2</a>
-                                <a href="#">3</a>
-                            </div>
-                        </div>
-                    </div>
+                        </div>  
+                    {% endfor %}
                 </div>
             </div>
-            <div class="section contact blue" id="page6">
-                <div class="content">
-                    <div class="container">
-                        <h2 class="border-title aligncenter"> Contact Us </h2>
-                        <div class="dt-sc-contact">
-                            <div class="dt-sc-contact-details">
-                            	<div class="view-map-1">
-                                    <p> Click to View Map </p>
-                                </div>
-                            	<div class="dt-sc-two-fifth column first no-space">
-                                	<img src="/assets/images/contact.jpg" alt="">
-                                </div>
-                            	<div class="dt-sc-three-fifth column no-space">
-                                    <div class="dt-sc-contact-info"><i class="fa fa-building"></i> 1950 Montreal Rd. Suite F-327, Cornwall, ON </div>
-                                    <div class="dt-sc-contact-info"><i class="fa fa-building"></i> 7 Bayview Rd., Ottawa, ON </div>
-                                    <div class="dt-sc-contact-info"><i class="fa fa-phone"></i> 1 613 262 4467 </div>
-                                    <div class="dt-sc-contact-info"><i class="fa fa-envelope-o"></i><a href="mailto:info@daydreamdev.com"> info@daydreamdev.com </a> </div>
-                                    <p> If you have any questions, feel free to contact us! </p>
-								</div>
+        </div>
+    </div>
+</div>
+<div class="section about red" id="page4">
+    <div class="content">
+        <h2 class="border-title aligncenter"> Our Team </h2>
+        <div class="container">
+            <div class="dt-sc-one-fifth column first">
+                <div class="dt-sc-team">
+                    <figure>
+                        <img src="/assets/images/brayden.png" alt=""/>
+                        <figcaption>
+                            <div class="short-info">
+                                <h6> Brayden <span> Girard </span></h6>
+                                <p class="icon-links">
+                                    <a href="https://www.facebook.com/brayden.girard" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                                    <a href="https://www.linkedin.com/in/braydengirard" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+                                    <a href="https://github.com/braydengirard" target="_blank"> <i class="fa fa-github"></i> </a>
+                                </p>
                             </div>
-                            <form class="dt-sc-enquiry-form" name="enqform">
-                                <input type="text" required="" name="txtname" title="Please enter your name" placeholder="Your Name">
-                                <input type="email" required="" autocomplete="off" name="txtemail" title="Please enter your valid email_id" placeholder="Your Email">
-                                <textarea required="" rows="3" cols="5" name="txtmessage" title=" Please enter your message" placeholder="Your Message"></textarea>
-                                <input type="submit" value="Send" name="submit" class="submit">
-                            </form>
-                        </div>
+                            <p class="description">Founder & CEO</p>
+                        </figcaption>			
+                    </figure>
+                </div>
+            </div>
+            <div class="dt-sc-one-fifth column">
+                <div class="dt-sc-team">
+                    <figure>
+                        <img src="/assets/images/troy.png" alt=""/>
+                        <figcaption>
+                            <div class="short-info">
+                                <h6>Troy <span> Veenstra </span></h6>
+                                <p class="icon-links">
+                                    <a href="https://www.facebook.com/troy.veenstra" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                                    <a href="https://www.linkedin.com/in/troy-veenstra-368b15139" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+                                    <a href="#" target="_blank"> <i class="fa fa-dribbble"></i> </a>
+                                </p>
+                            </div>
+                            <p class="description">Art Director</p>
+                        </figcaption>			
+                    </figure>
+                </div>
+            </div>
+            <div class="dt-sc-one-fifth column">
+                <div class="dt-sc-team">
+                    <figure>
+                        <img src="/assets/images/felipe.png" alt=""/>
+                        <figcaption>
+                            <div class="short-info">
+                                <h6> Felipe <span> Simoes </span></h6>
+                                <p class="icon-links">
+                                    <a href="https://www.facebook.com/fs.simoes" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                                    <a href="https://www.linkedin.com/in/felipesimoes" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+                                    <a href="https://github.com/felipedd" target="_blank"> <i class="fa fa-github"></i> </a>
+                                </p>
+                            </div>
+                            <p class="description">CTO</p>
+                        </figcaption>			
+                    </figure>
+                </div>
+            </div>
+            <div class="dt-sc-one-fifth column">
+                <div class="dt-sc-team">
+                    <figure>
+                        <img src="/assets/images/member.png" alt=""/>
+                        <figcaption>
+                            <div class="short-info">
+                                <h6> Hugo <span> North </span></h6>
+                                <p class="icon-links">
+                                    <a href="https://www.facebook.com/hugo.north" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                                    <a href="https://www.linkedin.com/in/hugo-north-a4371a71" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+                                    <a href="https://github.com/hugokkk" target="_blank"> <i class="fa fa-github"></i> </a>
+                                </p>
+                            </div>
+                            <p class="description">Developer</p>
+                        </figcaption>			
+                    </figure>
+                </div>
+            </div>
+            <div class="dt-sc-one-fifth column">
+                <div class="dt-sc-team">
+                    <figure>
+                        <img src="/assets/images/member.png" alt=""/>
+                        <figcaption>
+                            <div class="short-info">
+                                <h6> Raphael <span> Vicarone </span></h6>
+                                <p class="icon-links">
+                                    <a href="https://www.facebook.com/Crossfalcon" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                                    <a href="https://www.linkedin.com/in/raphael-vicarone-9028a3107" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+                                    <a href="https://github.com/rvicarone" target="_blank"> <i class="fa fa-github"></i> </a>
+                                </p>
+                            </div>
+                            <p class="description">Developer</p>
+                        </figcaption>			
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section blog orange" id="page5">
+    <div class="content">
+        <div class="container">
+            <h2 class="border-title aligncenter"> Our Blog </h2>
+            <div class="dt-sc-blog-carousel-wrapper">
+                <ul class="dt-sc-blog-carousel">
+                    {% for post in site.posts %}
+                        <li class="dt-sc-blog-entry">	
+                            <div class="dt-sc-entry-meta">	
+                                <div class="date"><p> <span>{{ post.date | date: "%b %-d" }}</span> </p> </div>	
+                                <a href="{{ site.url }}{{ post.url }}#disqus_thread" class="comments"><span class="fa fa-comments-o"> 0 </span> </a>			
+                            </div>
+                            <div class="dt-sc-entry-thumb">
+                                <a href="{{ post.url }}"> <img src="{{ post.image-preview }}" alt="blog"> </a>
+                                <p class="author"> Posted by : <a href="#"> {{ post.author }} </a> </p> 
+                            </div>
+                            <div class="dt-sc-entry-details">
+                                <div class="dt-sc-entry-title"><h5><a href="{{ post.url }}"> {{ post.title }}  </a></h5></div>			
+                                <div class="dt-sc-entry-thumb-desc">
+                                    {{ post.excerpt | truncatewords: 30 }} 
+                                    <a href="{{ post.url }}" class="dt-sc-read-more"> Read More </a>
+                                </div>	
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div id="pager" class="blog-pagination">
+                    <a href="#"> 1</a>
+                    <a href="#" class="selected">2</a>
+                    <a href="#">3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section contact blue" id="page6">
+    <div class="content">
+        <div class="container">
+            <h2 class="border-title aligncenter"> Contact Us </h2>
+            <div class="dt-sc-contact">
+                <div class="dt-sc-contact-details">
+                    <div class="view-map-1">
+                        <p> Click to View Map </p>
+                    </div>
+                    <div class="dt-sc-two-fifth column first no-space">
+                        <img src="/assets/images/contact.jpg" alt="">
+                    </div>
+                    <div class="dt-sc-three-fifth column no-space">
+                        <div class="dt-sc-contact-info"><i class="fa fa-building"></i> 1950 Montreal Rd. Suite F-327, Cornwall, ON </div>
+                        <div class="dt-sc-contact-info"><i class="fa fa-building"></i> 7 Bayview Rd., Ottawa, ON </div>
+                        <div class="dt-sc-contact-info"><i class="fa fa-phone"></i> 1 613 262 4467 </div>
+                        <div class="dt-sc-contact-info"><i class="fa fa-envelope-o"></i><a href="mailto:info@daydreamdev.com"> info@daydreamdev.com </a> </div>
+                        <p> If you have any questions, feel free to contact us! </p>
                     </div>
                 </div>
-                <div class="view-map">
-                    <p> Click to View Map </p>
-                </div> 
-                <div id="dt-sc-popup-map"></div>
+                <form class="dt-sc-enquiry-form" name="enqform">
+                    <input type="text" required="" name="txtname" title="Please enter your name" placeholder="Your Name">
+                    <input type="email" required="" autocomplete="off" name="txtemail" title="Please enter your valid email_id" placeholder="Your Email">
+                    <textarea required="" rows="3" cols="5" name="txtmessage" title=" Please enter your message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send" name="submit" class="submit">
+                </form>
             </div>
-		
+        </div>
+    </div>
+    <div class="view-map">
+        <p> Click to View Map </p>
+    </div> 
+    <div id="dt-sc-popup-map"></div>
+</div>
+
