@@ -103,13 +103,43 @@ body {
   box-shadow: inset 0 0 0 15px #0077B5;
 }
 
+.about {
+  h6 {
+    font-size:18px;
+  }
+}
+
+@media only screen and (max-width: 1119px) and (min-width: 960px) {
+  .dt-sc-one-fifth .dt-sc-team figure img {
+      padding: 5% 0 47%;
+  }
+}
+
+@media only screen and (max-width: 1119px) and (min-width: 960px) {
+  .dt-sc-one-fifth .dt-sc-team figure figcaption .short-info h6 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+  .dt-sc-one-fifth .dt-sc-team figure figcaption .short-info h6 {
+      font-size: 12px;
+  }
+}
+
 .recent-portfolio {
   margin-top: 70px;
 }
 
 @media only screen and (max-width: 767px) {
   .dt-sc-one-fifth .dt-sc-team figure img {
-      padding: 5% 0 25%;
+      padding: 5% 0 23%;
+  }
+}
+
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+  .dt-sc-one-fifth .dt-sc-team figure img, .dt-sc-one-sixth .dt-sc-team figure img {
+      padding: 5% 0 53%;
   }
 }
 
