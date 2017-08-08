@@ -1,6 +1,7 @@
 ---
 layout: portfolio
-title: Adam Beehler Plumbing
+order: 6
+title: Adam Beehler
 client: Adam Beehler Plumbing
 year: 2016
 image-preview: /assets/images/abp.jpg
@@ -11,7 +12,7 @@ tags:
   - Web
   - Jekyll
 icon: fa fa-wrench
-description: Adam Beehler Plumbing offers expertise in service, residential, commercial, water treatment and radiant in-floor heating.
+description: We built Adam Beehler Plumbing at Jekyll website to show how he offers expertise in service, residential, commercial, water treatment and radiant in-floor heating.
 link: /portfolio/adam-beehler-plumbing.html
 ---
-Adam Beehler Plumbing offers expertise in service, residential, commercial, water treatment and radiant in-floor heating.
+We built Adam Beehler Plumbing at Jekyll website to show how he offers expertise in service, residential, commercial, water treatment and radiant in-floor heating.

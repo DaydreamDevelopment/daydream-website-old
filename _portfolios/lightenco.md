@@ -1,6 +1,7 @@
 ---
 layout: portfolio
-title: Lightenco Website
+order: 7
+title: Lightenco 
 client: Lightenco
 year: 2016
 image-preview: /assets/images/lightenco.jpg
@@ -11,7 +12,7 @@ tags:
   - Web
   - Jekyll
 icon: fa fa-lightbulb-o
-description: Lightenco covers everything from improved lighting design to the recycling of hazardous bulbs.
+description: Lightenco covers everything from improved lighting design to the recycling of hazardous bulbs. We built a Jekyll website for them to get this message across.
 link: /portfolio/lightenco.html
 ---
-Lightenco covers everything from improved lighting design to the recycling of hazardous bulbs.
+Lightenco covers everything from improved lighting design to the recycling of hazardous bulbs. We built a Jekyll website for them to get this message across.

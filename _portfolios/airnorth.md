@@ -1,6 +1,7 @@
 ---
 layout: portfolio
-title: Air North Promo
+order: 2
+title: Air North
 client: Air North
 year: 2016
 image-preview: /assets/images/airnorth.jpg
@@ -12,7 +13,7 @@ tags:
   - Jekyll
   - JQuery
 icon: fa fa-plane
-description: A dynamic contest page to book your Air North Yukon Getaway package
+description: We built a dynamic contest page in Jekyll and JQuery to allow Air North to book Yukon Getaway packages
 link: /portfolio/airnorth.html
 ---
-A dynamic contest page to book your Air North Yukon Getaway package
+We built a dynamic contest page in Jekyll and JQuery to allow Air North to book Yukon Getaway packages

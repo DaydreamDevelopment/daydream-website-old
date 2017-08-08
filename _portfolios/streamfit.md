@@ -1,6 +1,7 @@
 ---
 layout: portfolio
-title: StreamFit.tv
+order: 3
+title: StreamFit
 client: StreamFit
 year: 2016
 image-preview: /assets/images/streamfit.jpg

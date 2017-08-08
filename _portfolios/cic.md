@@ -1,6 +1,7 @@
 ---
 layout: portfolio
-title: Cornwall Innovation Centre
+order: 4
+title: Cornwall Innovation
 client: Cornwall Innovation Centre
 year: 2016
 image-preview: /assets/images/cic.jpg
@@ -11,7 +12,7 @@ tags:
   - Web
   - Jekyll
 icon: fa fa-group
-description: The Cornwall Innovation Centre is an ecosystem designed to ignite new venture and high growth potential businesses.
+description: We built a website for the Cornwall Innovation Centre in Jekyll to show that they are an ecosystem designed to ignite new venture and high growth potential businesses.
 link: /portfolio/cornwall-innovation-centre.html
 ---
-The Cornwall Innovation Centre is an ecosystem designed to ignite new venture and high growth potential businesses.
+We built a website for the Cornwall Innovation Centre in Jekyll to show that they are an ecosystem designed to ignite new venture and high growth potential businesses.

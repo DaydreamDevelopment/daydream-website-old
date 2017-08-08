@@ -1,6 +1,7 @@
 ---
 layout: portfolio
-title: Brennan Strength App
+order: 1
+title: Brennan Strength
 client: Brennan Strength & Conditioning Coach Inc.
 year: 2016
 image-preview: /assets/images/brennanstrength.jpg
@@ -13,7 +14,7 @@ tags:
   - iOS
   - Android
 icon: fa fa-heartbeat
-description: A website and mobile app that can improve your health & fitness by following a customized program designed & monitored by an experienced NHL Strength & Conditioning Coach.
+description: We built a website and mobile app with Angular and Node that can improve your health & fitness by following a customized program designed & monitored by an experienced NHL Strength & Conditioning Coach.
 link: /portfolio/brennanstrength.html
 ---
-A website and mobile app that can improve your health & fitness by following a customized program designed & monitored by an experienced NHL Strength & Conditioning Coach.
+We built a website and mobile app with Angular and Node that can improve your health & fitness by following a customized program designed & monitored by an experienced NHL Strength & Conditioning Coach.

@@ -1,6 +1,7 @@
 ---
 layout: portfolio
-title: Petrotech Environmental
+order: 8
+title: Petrotech
 client: Petrotech Environmental Services
 year: 2016
 image-preview: /assets/images/petrotech.jpg
@@ -11,7 +12,7 @@ tags:
   - Web
   - Jekyll
 icon: fa fa-tint
-description: Petrotech Environmental Services specializes in petroleum based spill cleanup as well as contaminated soil excavation and site remediation. 
+description: We built Petrotech Environmental Services a Jekyll website to show that they specialize in petroleum based spill cleanup as well as contaminated soil excavation and site remediation.
 link: /portfolio/petrotech.html
 ---
-Petrotech Environmental Services specializes in petroleum based spill cleanup as well as contaminated soil excavation and site remediation. 
+We built Petrotech Environmental Services a Jekyll website to show that they specialize in petroleum based spill cleanup as well as contaminated soil excavation and site remediation.
