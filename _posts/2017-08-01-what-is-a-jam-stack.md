@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is a JAMstack"
-date:   2017-08-01 16:16:01 -0600
+date:   2017-08-01 16:00:01 -0500
 image-preview: /assets/images/jam-stack-preview.jpg
 image: /assets/images/jam-stack.jpg
 categories: jam serverless api angular jekyll
