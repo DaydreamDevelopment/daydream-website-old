@@ -78,6 +78,14 @@ body {
   color: rgba($blue,1); 
 }
 
+.bx-wrapper {
+  .column {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 // Services Section
 @media (min-width: 768px) and (max-height: 850px) {
   .services {
@@ -167,13 +175,16 @@ html.inner-page, html.inner-page body {
 }
 
 // Navigation
-.nav-contact p {
-  background: #FFFFFF;
-  color: $dark-gray;
-}
 
 .nav-contact {
   background: #FFFFFF;
+  p {
+    background: #FFFFFF;
+    color: $dark-gray;
+    a {
+      color: $black;
+    }
+  }
 }
 
 #logo img {
