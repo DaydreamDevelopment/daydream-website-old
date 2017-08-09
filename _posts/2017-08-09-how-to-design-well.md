@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Design Well"
-date:   2017-08-03 16:16:01 -0600
+date:   2017-08-09 16:16:01 -0600
 image-preview: /assets/images/how-to-design-preview.jpg
 image: /assets/images/how-to-design.jpg
 categories: design ui ux material sketch
