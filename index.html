@@ -247,9 +247,10 @@ description: 'Creating digital solutions using Jekyll website development, Angul
                         <p> Questions? Feel free to contact us! </p>
                     </div>
                 </div>
-                <form class="dt-sc-enquiry-form" name="enqform" action="thank-you" netlify>
+                <form class="dt-sc-enquiry-form" name="enqform" action="/" method="post">
+                    <input type="hidden" name="_to" value="info@daydreamdev.com">
                     <input type="text" required="" name="txtname" title="Please enter your name" placeholder="Your Name">
-                    <input type="email" required="" autocomplete="off" name="txtemail" title="Please enter your valid email_id" placeholder="Your Email">
+                    <input type="email" required="" autocomplete="off" name="_replyto" title="Please enter your valid email_id" placeholder="Your Email">
                     <textarea required="" rows="3" cols="5" name="txtmessage" title=" Please enter your message" placeholder="Your Message"></textarea>
                     <input type="submit" value="Send" name="submit" class="submit">
                 </form>
